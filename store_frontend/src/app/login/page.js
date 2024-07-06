@@ -16,7 +16,8 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await api.post('/users/login/', { username, password });
+      const response = await api.post('/users/login/', { username: username, password: password });
+      console.log(response);
       dispatch(setUser(response.data.user));
       dispatch(setToken(response.data.token));
       router.push('/');
@@ -39,7 +40,7 @@ export default function Login() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded text-black font-semibold"
             />
           </div>
           <div className="mb-4">
@@ -50,7 +51,7 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded text-black font-semibold"
             />
           </div>
           <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">

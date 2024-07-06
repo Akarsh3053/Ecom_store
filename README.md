@@ -32,5 +32,32 @@ Frontend of this app is built using NextJS with Redux for state-management and T
 ```bash
 git clone https://github.com/Akarsh3053/Ecom_store
 ```
-#### Setup Backend Server
+### Setup Backend Server
 - Move into backend directory and install the dependecies
+```bash
+pip install requirements.txt
+```
+- Add SQL credentials to ```/store_backend/settings.py```
+- Run migrations
+```bash
+python manage.py makemigrations
+```
+```bash
+python manage.py migrate
+```
+- Run the backend Django server
+```bash
+python manage.py runserver
+```
+-The server should now be running at ```localhost:8000```
+
+### Setup Frontend application
+- Move to front end directory and install dependencies
+```bash
+npm install
+```
+- Run development server
+```bash
+npm run dev
+```
+- Your app will be running at ```localhost:3000```
