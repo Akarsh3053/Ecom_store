@@ -1,8 +1,8 @@
 # E-commerce Store 
-A simple E-commerse store app with a robust Django backend and a responsive frontend built using NextJs
+A simple E-commerce store app with a robust Django backend and a responsive frontend built using NextJs
 
 ## Backend 
-It uses Django and SQL for implementing backend API endpoints, models and user authentication.
+It uses Django and SQL for implementing backend API endpoints, models, and user authentication.
 
 ### Models 
 - User
@@ -18,12 +18,12 @@ It uses Django and SQL for implementing backend API endpoints, models and user a
 
 
 ## Frontend
-Frontend of this app is built using NextJS with Redux for state-management and Tailwind for styling.
+The front end of this app is built using NextJS with Redux for state management and Tailwind for styling.
 
 ### Features 
-- Modern and user friendly UI
-- Seprerate pages using app router
-- Tailwinf styling for easy customization
+- Modern and user-friendly UI
+- Separate pages using the app router
+- Tailwind styling for easy customization
 - Redux toolkit for State-Management
 
 
@@ -33,7 +33,7 @@ Frontend of this app is built using NextJS with Redux for state-management and T
 git clone https://github.com/Akarsh3053/Ecom_store
 ```
 ### Setup Backend Server
-- Move into backend directory and install the dependecies
+- Move into the backend directory and install the dependencies
 ```bash
 pip install requirements.txt
 ```
@@ -56,7 +56,7 @@ python manage.py runserver
 ```bash
 npm install
 ```
-- Run development server
+- Run the development server
 ```bash
 npm run dev
 ```
